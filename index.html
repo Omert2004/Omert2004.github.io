@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#081525" />
+  <meta name="description" content="Oğuz Mert Coşkun — Electrical & Electronics Engineering and Computer Science. Embedded firmware, digital hardware, embedded security, signal processing, and edge AI projects." />
+  <meta property="og:title" content="Oğuz Mert Coşkun | Engineering Portfolio" />
+  <meta property="og:description" content="Embedded systems • Digital hardware • Edge AI" />
+  <title>Oğuz Mert Coşkun — Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#top" aria-label="Oğuz Mert Coşkun home"><span class="brand-mark">OM</span><span>Oğuz Mert Coşkun<span class="brand-sub">ENGINEERING PORTFOLIO</span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a class="nav-contact" href="#contact">Contact ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="status-dot"></span> ELECTRICAL & ELECTRONICS ENGINEERING + COMPUTER SCIENCE</span>
+          <h1>Engineering intelligence <em>at the edge.</em></h1>
+          <p class="hero-lead">I’m <strong>Oğuz Mert Coşkun</strong>. I work where low-level firmware, digital hardware, signal processing, and machine learning meet—building systems that can be measured, verified, and deployed.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore projects <span>↗</span></a><a class="btn btn-outline" href="mailto:mert.coskun@ozu.edu.tr">Get in touch <span>↗</span></a></div>
+          <div class="hero-meta"><span>Özyeğin University</span><span class="sep"></span><span>Embedded systems · Edge AI · FPGA</span></div>
+        </div>
+        <div class="hero-art" aria-label="Radar gesture recognition visual showcase">
+          <div class="scan-top"><span>FEATURED WORK / 01</span><span>MSP430FR5994 • 60 GHz RADAR</span></div>
+          <div class="scan-inner"><img src="assets/radar-spectrograms.webp" alt="Measured radar spectrogram features comparing left and right gestures" />
+            <span class="scan-corner top-left"></span><span class="scan-corner top-right"></span><span class="scan-corner bottom-left"></span><span class="scan-corner bottom-right"></span>
+          </div>
+          <div class="scan-bottom"><span><i></i> EMBEDDED INFERENCE</span><span>Q15 STFT → TinyCNN → UART</span></div>
+          <a href="#radar" class="visual-caption">Radar gesture recognition <span>View case study ↗</span></a>
+        </div>
+      </div>
+      <div class="wrap hero-bottom"><span>SCROLL TO EXPLORE</span><span>01 / SELECTED WORK</span></div>
+    </section>
+
+    <section id="about" class="section about-section"><div class="wrap">
+      <div class="section-heading"><span class="kicker">01 / ABOUT</span><h2>From hardware constraints<br>to working systems.</h2></div>
+      <div class="about-layout"><p class="large-copy">I'm an Electrical and Electronics Engineering student pursuing a Computer Science double major at <strong>Özyeğin University</strong>. I focus on embedded software, intelligent hardware, and practical verification—from acquisition and peripherals to algorithms running on constrained microcontrollers.</p>
+        <div class="about-side"><p>My work spans STM32 and MSP430 firmware, FPGA/VHDL design, secure firmware update flows, fixed-point DSP, and computer vision. Across research and industry internships, I care about reliability, observability, and honest performance reporting.</p><div class="small-rule"></div><span>INTERESTS</span><strong>Embedded security / real-time systems / edge intelligence</strong></div></div>
+      <div class="stats" aria-label="Selected engineering results"><div><strong>85.83<span>%</span></strong><span>Radar TinyCNN integer<br>validation accuracy</span></div><div><strong>2,620</strong><span>Parameters in deployed<br>radar TinyCNN</span></div><div><strong>2<span> kHz</span></strong><span>Radar I/Q sampling<br>on MSP430</span></div><div><strong>4</strong><span>Radar gesture<br>classification classes</span></div></div>
+    </div></section>
+
+    <section id="projects" class="section projects-section"><div class="wrap"><div class="section-heading inline-heading"><div><span class="kicker">02 / SELECTED PROJECTS</span><h2>Built, tested, documented.</h2></div><p>Research, course projects, and internship engineering work.</p></div>
+      <article class="feature-project" id="radar"><div class="feature-body"><div class="project-label"><span>01 / FEATURED RESEARCH</span><span>UNIVERSITY OF TRENTO · ENT-LAB</span></div><h3>Radar gesture recognition<br><em>on an MSP430.</em></h3><p>Implemented a complete embedded pipeline to classify left scroll, right scroll, hand click, and no gesture using 60 GHz Doppler radar I/Q signals, fixed-point spectral processing, and a small integer CNN.</p>
+        <div class="metrics-row"><div><strong>85.83%</strong><small>Integer validation accuracy</small></div><div><strong>~2.0 s</strong><small>Measured result interval</small></div><div><strong>~5.3 kB</strong><small>Model weights + biases</small></div></div>
+        <div class="tags"><span>MSP430FR5994</span><span>Embedded C</span><span>Q15 DSP / LEA</span><span>TinyCNN</span><span>UART</span></div>
+        <button class="text-button" data-open="radar-detail">Technical case study <span>↗</span></button>
+      </div><div class="feature-image"><img src="assets/radar-classes.webp" alt="Four measured feature tensors for left, right, click, and empty radar gesture classes" loading="lazy" /><div class="image-note">REAL EMBEDDED-ALIGNED RADAR FEATURES / 4 CLASSES</div></div></article>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-image"><img src="assets/weed.webp" alt="Weed detection versus growth-point localization illustration" loading="lazy" /></div><div class="project-card-content"><span class="project-type">UNDERGRADUATE RESEARCH · ONGOING</span><h3>Weed detection & growth-point localization</h3><p>YOLOv8/YOLOv11 detection and YOLOv11 Pose experiments for precise greenhouse weed targeting. Evaluated localization error, precision, recall, inference time, and false positives.</p><div class="tags"><span>Python</span><span>YOLO</span><span>Computer vision</span></div><button class="text-button" data-open="weed-detail">Project details ↗</button></div></article>
+        <article class="project-card"><div class="project-image"><img src="assets/secure-boot.webp" alt="STM32 secure boot state machine depicting update and recovery logic" loading="lazy" /></div><div class="project-card-content"><span class="project-type">CS350 · TEAM PROJECT</span><h3>Secure boot framework for STM32</h3><p>Signed and encrypted firmware updates with dual-slot recovery, rollback, and MPU-protected bootloader memory on STM32 Cortex-M devices.</p><div class="tags"><span>STM32</span><span>ECDSA-P256</span><span>AES-128</span><span>MPU</span></div><button class="text-button" data-open="secure-detail">Project details ↗</button></div></article>
+        <article class="project-card"><div class="project-image dark-image"><img src="assets/fpga-wave.webp" alt="ModelSim integrated UART transmit/receive simulation waveform" loading="lazy" /></div><div class="project-card-content"><span class="project-type">ASELSAN · HARDWARE INTERNSHIP</span><h3>FPGA UART interface in VHDL</h3><p>Designed and simulated UART reception, checksum validation, ALU processing, and response transmission using VHDL, Quartus, and ModelSim.</p><div class="tags"><span>VHDL</span><span>Quartus</span><span>ModelSim</span></div><button class="text-button" data-open="fpga-detail">Project details ↗</button></div></article>
+        <article class="project-card"><div class="project-image"><img src="assets/imu-debug.webp" alt="STM32CubeIDE memory verification for IMU incident recording" loading="lazy" /></div><div class="project-card-content"><span class="project-type">TEI · EMBEDDED SOFTWARE INTERNSHIP</span><h3>STM32 IMU incident recorder</h3><p>Implemented 100 Hz IMU sampling, a circular pre-event buffer, and Flash logging to preserve motion data before and after a triggered incident.</p><div class="tags"><span>STM32G0</span><span>I²C</span><span>Flash</span><span>C</span></div><button class="text-button" data-open="imu-detail">Project details ↗</button></div></article>
+        <article class="project-card"><div class="project-image"><img src="assets/serial-app.webp" alt="Serial monitor test application used for the USB-UART bridge" loading="lazy" /></div><div class="project-card-content"><span class="project-type">SAVRONIK · EMBEDDED SOFTWARE INTERNSHIP</span><h3>Bidirectional USB–UART bridge</h3><p>Implemented buffered USB-to-UART and UART-to-USB forwarding on NXP KL25Z, with a C# desktop test application and terminal-based verification.</p><div class="tags"><span>NXP KL25Z</span><span>C</span><span>USB / UART</span><span>C#</span></div><button class="text-button" data-open="bridge-detail">Project details ↗</button></div></article>
+        <article class="project-card"><div class="project-image"><img src="assets/baykon-serial.webp" alt="Python serial interface used to test UART reception" loading="lazy" /></div><div class="project-card-content"><span class="project-type">BAYKON · MANUFACTURING INTERNSHIP</span><h3>Variable-length UART reception</h3><p>Used DMA and USART receiver timeout interrupts on STM32G0 to parse variable-length weighing data and react to readings.</p><div class="tags"><span>STM32 LL</span><span>DMA</span><span>UART</span><span>Python</span></div><button class="text-button" data-open="baykon-detail">Project details ↗</button></div></article>
+      </div>
+    </div></section>
+
+    <section class="section experience-section" id="experience"><div class="wrap"><div class="section-heading"><span class="kicker">03 / EXPERIENCE</span><h2>Engineering in context.</h2></div><div class="timeline">
+      <div class="timeline-item"><span class="date">JUN – SEP 2026</span><div><h3>Research Intern <span>· University of Trento, ENT-Lab</span></h3><p>Embedded radar acquisition, fixed-point STFT, model quantization, and integer TinyCNN deployment on MSP430FR5994.</p></div><span class="timeline-type">RESEARCH</span></div>
+      <div class="timeline-item"><span class="date">AUG – SEP 2025</span><div><h3>Hardware Design Intern <span>· ASELSAN</span></h3><p>FPGA UART interface design and verification in VHDL, Quartus, and ModelSim.</p></div><span class="timeline-type">HARDWARE</span></div>
+      <div class="timeline-item"><span class="date">JUL – AUG 2025</span><div><h3>Embedded Software Intern <span>· TEI</span></h3><p>STM32 sensor acquisition, circular buffering, and event-triggered Flash logging.</p></div><span class="timeline-type">FIRMWARE</span></div>
+      <div class="timeline-item"><span class="date">JUN – JUL 2025</span><div><h3>Embedded Software Intern <span>· SAVRONIK</span></h3><p>USB–UART firmware bridge and C# serial test tooling.</p></div><span class="timeline-type">FIRMWARE</span></div>
+      <div class="timeline-item"><span class="date">JUL – AUG 2024</span><div><h3>Manufacturing Intern <span>· BAYKON</span></h3><p>STM32 USART reception using DMA, timeout detection, and serial test workflows.</p></div><span class="timeline-type">EMBEDDED</span></div>
+      <div class="timeline-item"><span class="date">2023 – 2025</span><div><h3>Engineering Teams <span>· OzU CanSat / OzU Racing</span></h3><p>Led CanSat electronics and telemetry work; contributed to Formula Student battery design and MATLAB/Simulink modeling.</p></div><span class="timeline-type">TEAMWORK</span></div>
+    </div></div></section>
+
+    <section class="section skills-section" id="skills"><div class="wrap"><div class="section-heading"><span class="kicker">04 / TECHNICAL TOOLKIT</span><h2>Across the stack.</h2></div><div class="skill-grid"><div><span class="skill-index">01</span><h3>Embedded firmware</h3><p>Embedded C/C++, interrupts, DMA, UART, I²C, circular buffers, Flash, STM32 HAL/LL, MSP430, NXP KL25Z</p></div><div><span class="skill-index">02</span><h3>Signal processing & edge AI</h3><p>Fixed-point Q15, STFT, FFT, TinyCNN, integer quantization, YOLO detection, pose estimation, Python</p></div><div><span class="skill-index">03</span><h3>Digital hardware & verification</h3><p>VHDL, FPGA interfaces, Quartus, ModelSim, test waveforms, system-level bring-up</p></div><div><span class="skill-index">04</span><h3>Embedded security</h3><p>ECDSA-P256, SHA-256, AES-128, firmware updates, Flash partitions, MPU isolation, rollback workflows</p></div></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="wrap contact-layout"><div><span class="kicker">05 / CONTACT</span><h2>Have an embedded<br><em>challenge in mind?</em></h2><p>I’m interested in engineering work at the intersection of reliable firmware, hardware, and intelligent embedded systems.</p><a class="contact-email" href="mailto:mert.coskun@ozu.edu.tr">mert.coskun@ozu.edu.tr <span>↗</span></a></div><div class="contact-links"><a href="https://github.com/Omert2004" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><strong>github.com/Omert2004</strong><b>↗</b></a><a href="https://www.linkedin.com/in/oguz-mert-coskun/" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span><strong>Oğuz Mert Coşkun</strong><b>↗</b></a><a href="mailto:mert.coskun@ozu.edu.tr"><span>EMAIL</span><strong>Start a conversation</strong><b>↗</b></a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><span>© <span id="year">2026</span> Oğuz Mert Coşkun</span><span>DESIGNED FOR GITHUB PAGES · BUILT WITH HTML / CSS / JS</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+
+  <dialog id="case-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span id="dialog-category" class="kicker"></span><button type="button" class="dialog-close" aria-label="Close case study">×</button></div><div id="dialog-content"></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
